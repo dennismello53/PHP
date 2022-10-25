@@ -1,0 +1,170 @@
+body {
+    --color-backfround: #ffffff;
+    --color-primary: #009579;
+    --color-primary--dark: #007f67;
+    --color-secondary: #252c6a;
+    --color-erro: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    font-size: 18px;
+    background-image: url(./images/vacinado.jpeg);
+    background-size: cover;
+}
+
+.container_cadastro {
+    width: 70%;
+    max-width: 70%;
+    margin: 15% 0% 0% 15%;
+    padding: 0%;
+    box-shadow: 0 0 40px rgb(0 0 0 / 20%);
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.container_selecao {
+    width: 70%;
+    max-width: 70%;
+    margin: 15% 0% 0% 15%;
+    padding: 0%;
+    box-shadow: 0 0 40px rgb(0 0 0 / 20%);
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.resultado{
+    display: none;
+    background-color: var(--color-primary);
+    padding: 20px;
+}
+
+.form_cadastro{
+    display: block;
+    margin-top: 0em;
+}
+
+.tabela_visu{ width: 100%; text-align: center;}
+    .tabela_visu tr:nth-child(2n -1){background: #CCC;}
+    .tabela_visu tr:first-child{background: var(--color-primary); color:#ffffff;  font-size: 18px;}
+    .tabela_visu td{width: 25%;}
+    
+
+.container,
+.page__titulo,
+.form__input,
+.form__botão,
+.tabela_visu, th,
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page__titulo{
+    margin: 20px;
+    text-align: center;
+}
+
+.form__msg {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__msg--sucesso {
+    color: var(--color-success);
+}
+
+.form__msg--erro {
+    color: var(--color-erro);
+}
+
+.form__input--grupo {
+    margin-bottom: 1rem;
+}
+
+.topnav{
+    width:100%;
+    height: 8%;
+    background-color: var(--color-primary);
+}
+
+.topnav li{
+    list-style: none;
+}
+
+.topnav .a_topnav {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 17px 146px 16px 100px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color:var(--color-primary--dark);
+    color: #ffffff
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+
+.form__texto{
+    float: left;
+}
+
+.form__botão {
+    width: 100%;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+
+.form__botão:hover {
+    background: var(--color-primary--dark);
+}
+
+.form__botão:active {
+    transform: scale(0.98);
+}
+
+.form__texto {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+.icones{
+    width: 15px;
+    height: 15px;
+}
